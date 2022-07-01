@@ -1,0 +1,9 @@
+note over browser: 
+event handler when form is submitted executes
+new note is created and added to notes array
+notes list is rerendered
+function that saves the new note to the server is called
+end note
+
+browser-->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: message saved successfully response (201)

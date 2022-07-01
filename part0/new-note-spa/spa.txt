@@ -1,0 +1,23 @@
+browser-->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML file
+browser-->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser-->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser: 
+browser starts running js code
+JSON data is requested from the appropriate URL
+event handler is attached to form element
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+
+note over browser:
+browser executes the event handler 
+after the response is returned with the notes data
+notes array is populated
+renders the notes in notes array in the browser
+end note
+
